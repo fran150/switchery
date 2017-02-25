@@ -1957,19 +1957,15 @@ Switchery.prototype.disable = function() {
 };
 
 if (typeof define !== 'undefined' && define.amd) {
-    debugger;
-
 	// AMD. Register as an anonymous module.
 	define(function() {
 		'use strict';
 		return Switchery;
 	});
 } else if (typeof module !== 'undefined' && module.exports) {
-    debugger;
 	//module.exports = Switchery;
 	module.exports.Switchery = Switchery;
 } else {
-    debugger;
 	window.Switchery = Switchery;
 }
 });
