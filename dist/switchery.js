@@ -1362,13 +1362,6 @@ FastClick.attach = function(layer) {
 
 
 if (typeof define !== 'undefined' && define.amd) {
-
-	// AMD. Register as an anonymous module.
-	define(function() {
-		'use strict';
-		return FastClick;
-	});
-} else if (typeof module !== 'undefined' && module.exports) {
 	module.exports = FastClick.attach;
 	module.exports.FastClick = FastClick;
 } else {
@@ -1963,6 +1956,22 @@ Switchery.prototype.disable = function() {
   this.destroy();
 };
 
+if (typeof define !== 'undefined' && define.amd) {
+    debugger;
+
+	// AMD. Register as an anonymous module.
+	define(function() {
+		'use strict';
+		return Switchery;
+	});
+} else if (typeof module !== 'undefined' && module.exports) {
+    debugger;
+	//module.exports = Switchery;
+	module.exports.Switchery = Switchery;
+} else {
+    debugger;
+	window.Switchery = Switchery;
+}
 });
 
 require("switchery");
