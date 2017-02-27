@@ -1,3 +1,4 @@
+;(function(){
 /**
  * Require the module at `name`.
  *
@@ -1971,3 +1972,5 @@ if (typeof define !== 'undefined' && define.amd) {
 });
 
 require("switchery");
+
+})();
